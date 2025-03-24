@@ -1,6 +1,10 @@
+using Api.Gateway.Extension;
+
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddReverseProxy()
-    .LoadFromConfig(builder.Configuration.GetSection("ReverseProxy"));
+
+
+builder.LoadFromMemory();
+//builder.LoadFromConfig();
 
 var app = builder.Build();
 
