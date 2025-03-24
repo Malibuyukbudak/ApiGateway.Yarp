@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.Gateway", "Api.Gateway\Api.Gateway.csproj", "{92E0F945-7363-49A8-87A7-45B7444FCD56}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{77FE6447-213A-47CE-A084-D29A067BF78C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Module.Identity", "Module.Identity\Module.Identity.csproj", "{D2110028-69FF-433C-A076-2535AE4C9C3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Module.Payment", "Module.Payment\Module.Payment.csproj", "{FBEE743D-CCA1-41D9-9D6C-732F8F57E713}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92E0F945-7363-49A8-87A7-45B7444FCD56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92E0F945-7363-49A8-87A7-45B7444FCD56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92E0F945-7363-49A8-87A7-45B7444FCD56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92E0F945-7363-49A8-87A7-45B7444FCD56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2110028-69FF-433C-A076-2535AE4C9C3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2110028-69FF-433C-A076-2535AE4C9C3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2110028-69FF-433C-A076-2535AE4C9C3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2110028-69FF-433C-A076-2535AE4C9C3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBEE743D-CCA1-41D9-9D6C-732F8F57E713}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBEE743D-CCA1-41D9-9D6C-732F8F57E713}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBEE743D-CCA1-41D9-9D6C-732F8F57E713}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBEE743D-CCA1-41D9-9D6C-732F8F57E713}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D2110028-69FF-433C-A076-2535AE4C9C3F} = {77FE6447-213A-47CE-A084-D29A067BF78C}
+		{FBEE743D-CCA1-41D9-9D6C-732F8F57E713} = {77FE6447-213A-47CE-A084-D29A067BF78C}
+	EndGlobalSection
+EndGlobal
