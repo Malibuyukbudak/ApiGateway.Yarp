@@ -13,7 +13,6 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-
 app.MapGet("identity/login", () =>
 {
     var response = new
@@ -28,8 +27,14 @@ app.MapGet("identity/login", () =>
             expiresIn = 3600
         }
     };
-    
+
     return Results.Json(response);
+});
+
+app.Use(async (context, next) =>
+{
+    Console.WriteLine($"Identity Service Çalıştı - Sunucu: {context.Request.Host}");
+    await next();
 });
 
 app.Run();
