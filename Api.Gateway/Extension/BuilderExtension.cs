@@ -43,9 +43,9 @@ public static class BuilderExtension
             {
                 ClusterId = "paymentCluster", Destinations = new Dictionary<string, DestinationConfig>
                 {
-                    { "Payment1", new DestinationConfig { Address = "https://localhost:7137" } },
-                    { "Payment2", new DestinationConfig { Address = "https://localhost:7138" } },
-                    { "Payment3", new DestinationConfig { Address = "https://localhost:7139" } }
+                    { "paymentService1", new DestinationConfig { Address = "https://localhost:7137" } },
+                    { "paymentService2", new DestinationConfig { Address = "https://localhost:7138" } },
+                    { "paymentService3", new DestinationConfig { Address = "https://localhost:7139" } }
                 },
                 LoadBalancingPolicy = LoadBalancingPolicies.RoundRobin,
             }
